@@ -1,0 +1,135 @@
+{
+  "id": "d3ae03e6-2a8a-47fe-b62a-2680c9c8dec0",
+  "version": "2.0",
+  "name": "yt",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "19deb954-d467-4b6c-8759-7d0e2e734b60",
+    "name": "yt2",
+    "commands": [{
+      "id": "5cdf5d4e-860d-4e6c-b227-e1677a706a21",
+      "comment": "",
+      "command": "open",
+      "target": "/?app=desktop&gl=PL&hl=pl",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cfde87b-332d-4302-b4cd-43c9d17ebb72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x916",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7bcf5c5-0a34-4b0a-86d3-0c438e630cb3",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8552ba9d-a22b-4cc2-a74b-fb1f9cf7f09b",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be1f559c-d3f6-4c86-9dde-fe8d2d114c29",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Python"
+    }, {
+      "id": "489fd4b7-e751-452c-8cf7-f3e46efb1e8c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "568e08d8-3ecc-4c64-8eeb-fe8698affb74",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Python for Beginners - Learn Python in 1 Hour",
+      "targets": [
+        ["linkText=Python for Beginners - Learn Python in 1 Hour", "linkText"],
+        ["css=.style-scope:nth-child(2) > #contents > .style-scope:nth-child(1) > #dismissible #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=kqtD5dpn9C8&pp=ygUGUHl0aG9u')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d53dedff-b28d-4ad0-8585-58a39efd7f83",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Python for Beginners - Learn Python in 1 Hour",
+      "targets": [
+        ["linkText=Python for Beginners - Learn Python in 1 Hour", "linkText"],
+        ["css=.style-scope:nth-child(2) > #contents > .style-scope:nth-child(1) > #dismissible #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=kqtD5dpn9C8&pp=ygUGUHl0aG9u')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f84323c-6f96-4394-8e66-d3de34086483",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(2) > #contents > .style-scope:nth-child(1) > #dismissible #video-title > .style-scope:nth-child(2)",
+      "targets": [
+        ["css=.style-scope:nth-child(2) > #contents > .style-scope:nth-child(1) > #dismissible #video-title > .style-scope:nth-child(2)", "css:finder"],
+        ["xpath=//a[@id='video-title']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/h3/a/yt-formatted-string", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ec624b7-c84b-4ac8-8eba-607fbec65186",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.style-scope:nth-child(2) > #contents > .style-scope:nth-child(2) > #dismissible #video-title > .style-scope:nth-child(2)",
+      "targets": [
+        ["css=.style-scope:nth-child(2) > #contents > .style-scope:nth-child(2) > #dismissible #video-title > .style-scope:nth-child(2)", "css:finder"],
+        ["xpath=(//a[@id='video-title']/yt-formatted-string)[2]", "xpath:idRelative"],
+        ["xpath=//ytd-video-renderer[2]/div/div/div/div/h3/a/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'Python Tutorial - Python Full Course for Beginners')]", "xpath:innerText"]
+      ],
+      "value": "Learn Python from A to Z - 200,000+ Online Courses"
+    }]
+  }],
+  "suites": [{
+    "id": "6d690a4a-84db-4a42-abe8-16f8545a7c98",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["19deb954-d467-4b6c-8759-7d0e2e734b60"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}
